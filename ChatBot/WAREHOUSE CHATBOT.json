@@ -1,0 +1,2657 @@
+{
+  "intents": [
+    {
+      "intent": "Centre_ID",
+      "examples": [
+        {
+          "text": "center id"
+        },
+        {
+          "text": "supermarkets available under this warehouse"
+        },
+        {
+          "text": "list of grocery shops available"
+        },
+        {
+          "text": "list of hypermarts available"
+        },
+        {
+          "text": "centre id"
+        },
+        {
+          "text": "center code"
+        },
+        {
+          "text": "give me the list of shops associated with this warehouse"
+        },
+        {
+          "text": "give me the list of centers associated with this warehouse."
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "City_Codes",
+      "examples": [
+        {
+          "text": "give me the list of available city codes."
+        },
+        {
+          "text": "give me the list of available town codes."
+        },
+        {
+          "text": "Can I Know the available city codes associated with this warehouse."
+        },
+        {
+          "text": "City code"
+        },
+        {
+          "text": "City id"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Welcome_Message",
+      "examples": [
+        {
+          "text": "hi"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good afternoon"
+        },
+        {
+          "text": "hey"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Products",
+      "examples": [
+        {
+          "text": "Product id"
+        },
+        {
+          "text": "list of available item categories?"
+        },
+        {
+          "text": "What are the availableproducts?"
+        },
+        {
+          "text": "give me the product categories?"
+        },
+        {
+          "text": "List of items"
+        },
+        {
+          "text": "Product code"
+        },
+        {
+          "text": "Products"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Region_codes",
+      "examples": [
+        {
+          "text": "Region id"
+        },
+        {
+          "text": "give me the list of region codes."
+        },
+        {
+          "text": "list of region codes."
+        },
+        {
+          "text": "region codes."
+        },
+        {
+          "text": "codes of region."
+        },
+        {
+          "text": "Region code"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "yes_or_no",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "yes",
+          "synonyms": [
+            "s",
+            "ofcourse",
+            "absolutely",
+            "i am willing"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "no",
+          "synonyms": [
+            "nothing",
+            "not",
+            "never",
+            "i am not willing",
+            "i am not interested"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "hi",
+          "synonyms": [
+            "hey",
+            "hello",
+            "hlo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good afternoon",
+          "synonyms": [
+            "afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "evening"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gud morning",
+            "gm"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "products",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "canned /jarred foods",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cleaners",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dairy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Dry/Baking goods",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "frozen foods",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Personal care",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Bread and Bakery",
+          "synonyms": [
+            "bread",
+            "bakery",
+            "bread & bakery",
+            "bread/bakery"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "beverages",
+          "synonyms": [
+            "juice",
+            "mocktails",
+            "cocktails"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Centers",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Chennai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Delhi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Hyderabad",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Kolkata",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lucknow",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Mumbai",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Agra",
+          "synonyms": [
+            "agra"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bangalore",
+          "synonyms": [
+            "Bangalore"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Yummy Tummies Grocery (39)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to look at our product categories?  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594778728004",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_7_1594778926947"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Cascade Platinum Detergent (1558)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Durable Product Cleaner (2581)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594784243701",
+      "dialog_node": "node_5_1594784499610"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Gateway Groceries (17)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to have a look at our product categories?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594779735535",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_10_1594779916273"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "NuFarm Market  (113)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Southern Saga (145)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Big Y Foods  (80)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Urban Fresh Grocers  (55)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Leaf Green Nature Pantry (186)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1594777309109",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1594777805490"
+      },
+      "dialog_node": "node_2_1594777538483"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Neotea Orange Crush (2631)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Red Bull  (1311)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1594780782267",
+      "dialog_node": "node_1_1594781094554"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dove Soap (2444)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Yardley Face Powder (2667)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1594784610063",
+      "dialog_node": "node_5_1594784973915"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Red Chilli (1207)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "SSS Pepper (2322)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Parry's Sugar (1216)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Tata Crystal Salt (1727)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594783882855",
+      "dialog_node": "node_8_1594784120803"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Awesome Organics (72)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "The Farmer's Pocket (41)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fred's Family Mart (10)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Gracious Groceries (110)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Munchy's Grocery (52)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594779049588",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1594779396085"
+      },
+      "dialog_node": "node_6_1594779233809"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Fresh Origin Market  (152)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Natural Gourmet (92)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fresh Grassets (27)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Stop & Shop (14)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Real Food Market (26)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594751550855",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1594777132578"
+      },
+      "dialog_node": "node_5_1594751840982"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning ! Tell me your queries"
+              },
+              {
+                "text": "Good Morning  ! Welcome to our warehouse"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594556021768",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_6_1594557364359",
+      "previous_sibling": "response_9_1594557289104"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon ! I am here to answer your queries."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594556021768",
+      "conditions": "@Greetings:(Good afternoon)",
+      "dialog_node": "response_10_1594557462971",
+      "previous_sibling": "response_10_1594557414974"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening! I am obliged to help you."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594556021768",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_10_1594557414974",
+      "previous_sibling": "response_6_1594557364359"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey, how can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594556021768",
+      "conditions": "@Greetings:hi",
+      "dialog_node": "response_9_1594557289104"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Root Spring Market (73)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "May Meet Grocery (29)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Nature Coop (43)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Green Gourmand Grocery (102)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "White Sheep Grocery (61)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594777944890",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594778407933"
+      },
+      "dialog_node": "node_4_1594778240970"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Canned and Jarred Foods"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Dry and Baking Products"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Cleaners"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Personal Care"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594663990708",
+      "dialog_node": "node_2_1594785166187"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": " Spice Supermarket (143)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to see our product categories?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1594751031985",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_10_1594751271299"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pickles (1971)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Hershey'sPinto beans (2306)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Amy's Chicken Broth (2139)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1594783122135",
+      "dialog_node": "node_5_1594783326394"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Local Acres (104)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to have a look at our product categories?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1594751840982",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_2_1594777132578"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of  centers along with its center  id in Delhi."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fresh Idea Market (91)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Origacre Grocery (20)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Frontier Foods (106)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Full Course Gourmet (81)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_4_1594778240970"
+      },
+      "conditions": "@Centers:Delhi",
+      "dialog_node": "node_4_1594777944890",
+      "previous_sibling": "node_3_1594777309109"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of  centers along with its center  id in Lucknow."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Green Apple Grocery (74)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Produce Pros (34)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "The Worldly Grocer (137)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "In and Out  Grocery (153)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594779735535"
+      },
+      "conditions": "@Centers:Lucknow",
+      "dialog_node": "node_10_1594779513410",
+      "previous_sibling": "node_6_1594779049588"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of centers in Chennai."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Farmer's GMarket (77)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Homeland Sown (23)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Forbest Foods (97)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Aeronna Foods (146)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1594777538483"
+      },
+      "conditions": "@Centers:Chennai",
+      "dialog_node": "node_3_1594777309109",
+      "previous_sibling": "node_7_1594751550855"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of  centers along with its center  id in Hyderabad."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Global Fresh Market  (83)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Freshcipe Shoppe (57)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Green Gatherings (126)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Squeezed Fresh Grocery  (177)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1594778728004"
+      },
+      "conditions": "@Centers:Hyderabad",
+      "dialog_node": "node_1_1594778523044",
+      "previous_sibling": "node_4_1594777944890"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of  centers along with its center  id in Mumbai."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Hub City Groceries (161)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Market Basket (42)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "No Stop Groceries (53)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Philly Foodworks (30)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1594780454618"
+      },
+      "conditions": "@Centers:Mumbai",
+      "dialog_node": "node_6_1594780066247",
+      "previous_sibling": "node_10_1594779513410"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of  centers along with its center  id in Kolkata."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Meals Shelf Grocery  (132)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Epic Groceries (89)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Jolly Belly Grocery  (162)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Brass Track Foods(75)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1594779233809"
+      },
+      "conditions": "@Centers:Kolkata",
+      "dialog_node": "node_6_1594779049588",
+      "previous_sibling": "node_1_1594778523044"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here  is the list of centers in banglore."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Amazon Fresh (101)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fine Choice Food Market (86)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Elite Grocery (32)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Foxtrot Market (149)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1594751840982"
+      },
+      "conditions": "@Centers:Banglore",
+      "dialog_node": "node_7_1594751550855",
+      "previous_sibling": "node_1_1594750268763"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of  centers in Agra."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Couch Potato (11)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Burpy Grocery (13)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Eden Organics (124)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Mckenzie's Food Store (66)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594750134545",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_3_1594751031985"
+      },
+      "conditions": "@Centers:Agra",
+      "dialog_node": "node_1_1594750268763"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mealtide Groceries (93)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to have a look at our product categories?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594779233809",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_3_1594779396085"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Amul Butter (1445)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1594783544014",
+      "dialog_node": "node_2_1594783777915"
+    },
+    {
+      "type": "standard",
+      "title": "Cont..",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hyderabad (23)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Kolkata (71)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Lucknow (35)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Mumbai (93)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1594749963814",
+      "dialog_node": "node_8_1594750134545"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Whole Wheat Bread  (1438)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "British Cookies (1847)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594782384743",
+      "dialog_node": "node_8_1594782618288"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Fine..! Thank you for visiting our warehouse."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594634756141",
+      "conditions": "@yes_or_no:no",
+      "dialog_node": "response_4_1594635527214",
+      "previous_sibling": "response_8_1594635449861"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594634756141",
+      "dialog_node": "response_6_1594635734492",
+      "previous_sibling": "response_4_1594635527214"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you..! Have a look at our product categories."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1594634756141",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594663990708"
+      },
+      "conditions": "@yes_or_no:yes",
+      "dialog_node": "response_8_1594635449861"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Gold Medal Grocery (24)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Express Grocery (109)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fresh Direct (108)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Home Away Groceries (36)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Happy Mart (157)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_10_1594779513410",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594779916273"
+      },
+      "dialog_node": "node_8_1594779735535"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Van Go Grocery (50)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing  to have a look at our product categories?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1594778240970",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_8_1594778407933"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bliss Vista Grocery (67)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Bill's Grocery (174)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Organic Aisles (59)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Mealscale Superstore (58)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Best Hands Foods (65)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594778523044",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1594778926947"
+      },
+      "dialog_node": "node_6_1594778728004"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Harrows Market (76)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Terra Grocery (68)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Idlewild Market (51)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to have a look at our product categories?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1594780066247",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_6_1594780454618"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "New leaf Grocery (94)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Fresh Food(64)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Brooklyn Fare (129)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Farm House Grocery (139)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Athenas Farms  (88)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1594750268763",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_10_1594751271299"
+      },
+      "dialog_node": "node_3_1594751031985"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Switz Spring Roll Sheets (2290)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Switz Samosa Patti (1525)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "ITC Lebanese Kebab (2704)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_9_1594782760588",
+      "dialog_node": "node_7_1594783027204"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "The Farmlands (99)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Are you willing to have a look at our  product categories."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1594777538483",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594634756141"
+      },
+      "dialog_node": "node_6_1594777805490"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of personal care products  along with its product code.",
+            "source": "https://dlior9lx1k7r2.cloudfront.net/postphoto/66a67062-82a1-4ffc-8f6d-693f5178eb6f.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Loreal Shampoo (1962)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Nivea's Mens Facewash (1571)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Himalayas Women's Facewash (2956)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Nivea Dark Spot Reduction Cream (2104)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1594784973915"
+      },
+      "conditions": "@products:(Personal care)",
+      "dialog_node": "node_2_1594784610063",
+      "previous_sibling": "node_10_1594784243701"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of bread and bakery products along with its product code.",
+            "source": "https://www.featurepics.com/StockImage/20150201/bakery-products-stock-photo-3442766.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Milk Bread (1311)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Choco Chip Cookies (1803)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Muffins (1198)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Chocolate Pie (1778)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594782618288"
+      },
+      "conditions": "@products:(Bread and Bakery)",
+      "dialog_node": "node_4_1594782384743",
+      "previous_sibling": "node_9_1594780782267"
+    },
+    {
+      "type": "standard",
+      "title": "Products_via_intents",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Enter a Product Category name to view the product names with their codes..!! "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Beverages "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Bread and Bakery Products"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Frozen Foods"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Dairy"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1594785166187"
+      },
+      "conditions": "#Products",
+      "dialog_node": "node_10_1594663990708",
+      "previous_sibling": "node_2_1594784610063"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of cleaner products along with its product code.",
+            "source": "https://www.londonde.com/wp-content/uploads/household-products-fb.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Ariel Washing Liquid (1247)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Lizol (2304)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Phenyl (1770)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Mr.Clean Magical Eraser (2126)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1594784499610"
+      },
+      "conditions": "@products:cleaners",
+      "dialog_node": "node_10_1594784243701",
+      "previous_sibling": "node_4_1594783882855"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We our supplying goods across 8 regions in India. Kindly Enter any of the below region to view our centers in that specific region!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Agra (56)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Bangalore (34)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Chennai (77)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Delhi (85)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594750134545"
+      },
+      "conditions": "#Centre_ID",
+      "dialog_node": "node_2_1594749963814",
+      "previous_sibling": "node_6_1594556021768"
+    },
+    {
+      "type": "standard",
+      "title": "City Code",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Here is the list of our regions with their city codes. Since it's  a bit long, look into it carefully :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Agra(56) \n456\n517\n522\n577\n579\n590\n599\n604\n638\n647\n654\n679\n683\n685\n700\n703\n\nBangalore (34)\n461\n526\n576\n602\n615\n632\n648\n649\n658\n675\n676\n693\n\nChennai (77)\n473\n478\n485\n515\n541\n553\n556\n561\n562\n593\n620\n628\n651\n659\n680\n695\n\nDelhi (85)\n614\n699\n713\n\nHyderabad ( 23)\n698\n\nKolkata (71)\n596\n\nLucknow (35)\n702\n\nMumbai (93)\n609\n"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#City_Codes || #Region_codes",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1594701733947",
+      "previous_sibling": "node_10_1594663990708"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of dairy products along with its product code. ",
+            "source": "https://www.deccanherald.com/sites/dh/files/article_images/2019/10/13/file77g20u0t0t113er7c6s7-1570908395.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Milky Mist Paneer (2492)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Hatsun Milk (2707)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Rory's Cheese (1543)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Heritage Curd (1902)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_2_1594783777915"
+      },
+      "conditions": "@products:Dairy",
+      "dialog_node": "node_7_1594783544014",
+      "previous_sibling": "node_3_1594783122135"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_6_1594701733947",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of dry and baking products along with its product code.",
+            "source": "https://www.ewhfoodservices.com.au/content/image/product-dried.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Toor Dhal (2826)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Urid Dhal (2664)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Gram Dhal (2569)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Moong Dhal (1230)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1594784120803"
+      },
+      "conditions": "@products:(Dry/Baking goods)",
+      "dialog_node": "node_4_1594783882855",
+      "previous_sibling": "node_7_1594783544014"
+    },
+    {
+      "type": "standard",
+      "title": "greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Welcome_Message || @Greetings",
+      "dialog_node": "node_6_1594556021768",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "yes or  no",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@yes_or_no",
+      "dialog_node": "node_8_1594634756141",
+      "previous_sibling": "node_2_1594749963814"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of frozen foods along with its product code. ",
+            "source": "https://www.bigbasket.com/media/uploads/flatpages/frozen-foods/des_slider-2.jpg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "McCain French Fries (2494)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "McCain Smiles(2760)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "McCain Super Wedges (2490)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "McCain Veggie Burgers (1109)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_7_1594783027204"
+      },
+      "conditions": "@products:(frozen foods)",
+      "dialog_node": "node_9_1594782760588",
+      "previous_sibling": "node_4_1594782384743"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of beverages.",
+            "source": "https://bsmedia.business-standard.com/_media/bs/img/article/2019-01/01/full/1546320860-9359.png",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Coca Cola (1993)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Red Wine (1885)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Mountain Dew (2539)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Hershey's Choclate Milk Shake (1248)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1594781094554"
+      },
+      "conditions": "@products:beverages",
+      "dialog_node": "node_9_1594780782267",
+      "previous_sibling": "node_8_1594634756141"
+    },
+    {
+      "type": "standard",
+      "output": {
+        "generic": [
+          {
+            "title": "Here is the list of canned and jarred foods along with its product code.",
+            "source": "https://teaandsympathynewyork.files.wordpress.com/2012/08/ts-canned.jpeg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "Tomato Sauce (1878)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Chilli Sauce (2640)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Soya Sauce (2576)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "values": [
+              {
+                "text": "Nestle Milkmaid(1754)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_5_1594783326394"
+      },
+      "conditions": "@products:(canned /jarred foods)",
+      "dialog_node": "node_3_1594783122135",
+      "previous_sibling": "node_9_1594782760588"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hey.. Hi..! This is Parrot and I am here to help you with your queries regarding available items and Centre id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "WAREHOUSE CHATBOT",
+  "language": "en",
+  "description": ""
+}
